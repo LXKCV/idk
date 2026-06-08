@@ -135,6 +135,8 @@ Les dépendances sont listées dans `requirements.txt` :
 │   └── .gitkeep
 ├── pdf/
 │   └── .gitkeep
+├── exports/
+│   └── exports CSV générés
 ├── tests/
 │   └── .gitkeep
 ├── main.py
@@ -153,6 +155,16 @@ Les dépendances sont listées dans `requirements.txt` :
 
 ## Notes d'utilisation
 
+- Interface sombre premium inspirée SaaS.
+- Navigation latérale : Dashboard, Stock, Ventes, Clients, Comptabilité, Factures, Statistiques, Agenda, Paramètres.
+- Création automatique des tables SQLite.
+- Gestion produits, clients, comptabilité, factures PDF, agenda et paramètres.
+- Module ventes avec panier, décrément automatique du stock, génération de revenu et facture PDF optionnelle.
+- Suivi stock avancé : valeur d'achat, valeur de vente, seuils faibles, corrections entrée/sortie et historique des mouvements.
+- Exports CSV sur les tableaux principaux pour réutiliser les données hors de l'application.
+- Graphiques Matplotlib intégrés.
+- Sauvegarde automatique de la base SQLite avec intervalle paramétrable.
+- Architecture orientée objet, modulaire et commentée.
 - Au premier lancement, l'application crée automatiquement la base de données et insère quelques données de démonstration.
 - Les factures PDF sont générées uniquement après création d'une facture depuis l'onglet `Factures`.
 - Les informations affichées sur les factures proviennent de l'onglet `Paramètres`.
